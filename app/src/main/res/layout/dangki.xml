@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fillViewport="true"
-    tools:context=".SignUpActivity">
+    tools:context=".MainActivity">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextConfirmPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageCMND"
+        app:layout_constraintTop_toBottomOf="@+id/chuthich"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -44,16 +44,15 @@
         android:layout_marginEnd="133dp"
         android:layout_marginRight="133dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
+        android:text="ĐĂNG KÝ"
         android:textColor="@android:color/background_light"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTextHoTen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:text="Đăng ký"
-        tools:textSize="30dp" />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextHoTen"
@@ -65,7 +64,7 @@
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
         android:ems="10"
-        android:hint="Họ và tên"
+        android:hint="Họ và tên *"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -88,7 +87,7 @@
         android:layout_marginRight="65dp"
         android:layout_marginBottom="5dp"
         android:ems="10"
-        android:hint="Chứng minh nhân dân"
+        android:hint="Số CMND *"
         android:inputType="number"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -176,13 +175,13 @@
         android:layout_marginRight="65dp"
         android:layout_marginBottom="5dp"
         android:ems="10"
-        android:hint="SĐT"
+        android:hint="SĐT *"
         android:inputType="phone"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
         android:textColorLink="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/buttonChonAnh"
+        app:layout_constraintBottom_toTopOf="@+id/imageCMND"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress"
@@ -190,31 +189,57 @@
 
     <Button
         android:id="@+id/buttonChonAnh"
-        android:layout_width="79dp"
-        android:layout_height="46dp"
+        android:layout_width="42dp"
+        android:layout_height="38dp"
         android:layout_marginStart="19dp"
         android:layout_marginLeft="19dp"
-        android:background="@drawable/rectangle1"
-        android:text="chọn"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/qrcode"
         android:textColor="@android:color/background_light"
         app:layout_constraintStart_toEndOf="@+id/imageCMND"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageCMND"
         android:layout_width="183dp"
         android:layout_height="47dp"
+
         android:layout_marginStart="65dp"
         android:layout_marginLeft="65dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="19dp"
         android:layout_marginRight="19dp"
+
         android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/chuthich"
         app:layout_constraintEnd_toStartOf="@+id/buttonChonAnh"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhone"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/chuthich"
+        android:layout_width="245dp"
+        android:layout_height="31dp"
+
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="5dp"
+        android:text="Scan CMND"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCMND"
         tools:ignore="MissingConstraints" />
 
 
