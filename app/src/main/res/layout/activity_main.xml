@@ -53,10 +53,12 @@
         android:id="@+id/buttonYCDangKi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="null"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="181dp"
         android:text="Đăng ký tài khoản mới"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="497dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDangNhap"
+        tools:layout_editor_absoluteX="123dp"
         tools:ignore="MissingConstraints" />
 
     <ImageView
