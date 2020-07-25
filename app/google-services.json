@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "399783522066",
+    "firebase_url": "https://insu365-6ec9d.firebaseio.com",
+    "project_id": "insu365-6ec9d",
+    "storage_bucket": "insu365-6ec9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399783522066:android:33b59d442f2c6bf5d7cdcb",
+        "android_client_info": {
+          "package_name": "com.example.shecode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399783522066-n6h65oqcpgekg2ba13ece79d3ul8bisr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZsm8hQkXfU_xaKs7SIdxoslOyRCcR8Ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399783522066-n6h65oqcpgekg2ba13ece79d3ul8bisr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
