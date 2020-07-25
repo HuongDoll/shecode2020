@@ -46,6 +46,7 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dangki);
+<<<<<<< HEAD
 
         findID();
 
@@ -153,11 +154,14 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             });
         }
+=======
+>>>>>>> 37a08301283b6872e73d3763b6727a50b7f5db0f
     }
 
-    private void chooseImage(){
+    private void chooseImage() {
         Intent chooseImage = new Intent(Intent.ACTION_GET_CONTENT);
         chooseImage.setType("image/*");
+<<<<<<< HEAD
         startActivityForResult(Intent.createChooser(chooseImage,"Select Picture"),PICK_IMAGE_REQUEST);
     }
 
@@ -184,5 +188,8 @@ public class SignUpActivity extends AppCompatActivity {
         btn_signup = findViewById(R.id.buttonDangKi);
         img_cmnd = findViewById(R.id.imageCMND);
         btn_selectimg = findViewById(R.id.buttonChonAnh);
+=======
+
+>>>>>>> 37a08301283b6872e73d3763b6727a50b7f5db0f
     }
 }
