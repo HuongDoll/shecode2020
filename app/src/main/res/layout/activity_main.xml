@@ -1,72 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_foreground"
+    android:background="@drawable/background"
+    android:fillViewport="true"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="145dp"
-        android:layout_height="44dp"
-        android:text="TextView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="188dp"
-        tools:text="Đăng nhập"
-        tools:textSize="30dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editTextCMND"
-        android:layout_width="281dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:hint="Chứng minh nhân dân"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="267dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="222dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="90dp"
 
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="282dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:hint="Pass word"
-        android:inputType="textPassword"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="342dp"
-        tools:ignore="MissingConstraints" />
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="99dp"
+            android:layout_marginRight="99dp"
+            android:layout_marginBottom="37dp"
+            android:text="ĐĂNG NHẬP"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextCMND"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/buttonDangNhap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Đăng nhập "
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="424dp"
-        tools:ignore="MissingConstraints" />
+            />
 
-    <Button
-        android:id="@+id/buttonYCDangKi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="null"
-        android:text="Đăng ký tài khoản mới"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="497dp"
-        tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/editTextCMND"
+            android:layout_width="281dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:ems="10"
+            android:hint="Chứng minh nhân dân"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:textIsSelectable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="29dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="281dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="41dp"
+            android:ems="10"
+            android:hint="Pass word"
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_light"
+            android:textColorHighlight="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:textColorLink="@android:color/background_light"
+            android:textCursorDrawable="@android:color/background_light"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDangNhap"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCMND"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonDangNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="109dp"
+            android:layout_marginLeft="109dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginRight="109dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/rectangle1"
+            android:text="Đăng nhập "
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonYCDangKi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonYCDangKi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="126dp"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="121dp"
+            android:layout_marginRight="121dp"
+            android:layout_marginBottom="147dp"
+            android:background="null"
+            android:text="Đăng ký tài khoản mới"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDangNhap"
+            tools:ignore="MissingConstraints" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

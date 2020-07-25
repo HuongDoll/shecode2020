@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_foreground"
+    android:background="@drawable/background"
     android:fillViewport="true"
-    tools:context=".MainActivity">
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".SignUpActivity">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
+
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="282dp"
-        android:layout_height="46dp"
+        android:layout_width="281dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:hint="Mật khẩu"
         android:inputType="textPassword"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="548dp" />
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="560dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -29,7 +29,7 @@
         android:text="TextView"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="150dp"
+        tools:layout_editor_absoluteY="140dp"
         tools:text="Đăng ký"
         tools:textSize="30dp" />
 
@@ -42,7 +42,7 @@
         android:inputType="textPersonName"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="213dp" />
+        tools:layout_editor_absoluteY="200dp" />
 
     <EditText
         android:id="@+id/editTextTextCMND"
@@ -53,29 +53,29 @@
         android:inputType="number"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="270dp" />
+        tools:layout_editor_absoluteY="260dp" />
 
     <EditText
         android:id="@+id/editTextDiaChi"
-        android:layout_width="284dp"
-        android:layout_height="43dp"
+        android:layout_width="281dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:hint="Địa chỉ"
         android:inputType="textPersonName"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="427dp" />
+        tools:layout_editor_absoluteY="440dp" />
 
     <EditText
         android:id="@+id/editTextConfirmPassword"
-        android:layout_width="282dp"
-        android:layout_height="46dp"
+        android:layout_width="281dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:hint="Nhập lại mật khẩu"
         android:inputType="textPassword"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="609dp" />
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="620dp" />
 
     <Button
         android:id="@+id/buttonDangKi"
@@ -84,7 +84,7 @@
         android:text="Đăng Ký "
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="667dp" />
+        tools:layout_editor_absoluteY="680dp" />
 
     <ImageView
         android:id="@+id/logo"
@@ -92,46 +92,46 @@
         android:layout_height="96dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="29dp"
+        tools:layout_editor_absoluteY="20dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
         android:id="@+id/editTextEmailAddress"
-        android:layout_width="283dp"
-        android:layout_height="44dp"
+        android:layout_width="281dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:hint="Email"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="325dp"
+        tools:layout_editor_absoluteY="320dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="283dp"
-        android:layout_height="43dp"
+        android:layout_width="281dp"
+        android:layout_height="47dp"
         android:ems="10"
         android:inputType="phone"
         android:hint="SĐT"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="376dp"
+        tools:layout_editor_absoluteY="380dp"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonChonAnh"
-        android:layout_width="82dp"
-        android:layout_height="44dp"
+        android:layout_width="79dp"
+        android:layout_height="46dp"
         android:text="chọn"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="484dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="500dp" />
 
     <ImageView
         android:id="@+id/imageCMND"
         android:layout_width="183dp"
-        android:layout_height="45dp"
+        android:layout_height="47dp"
         tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="484dp"
+        tools:layout_editor_absoluteY="500dp"
         tools:srcCompat="@tools:sample/avatars"
         tools:ignore="MissingConstraints" />
 
