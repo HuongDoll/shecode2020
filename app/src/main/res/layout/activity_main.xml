@@ -33,23 +33,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+             />
 
-            />
-
-<<<<<<< HEAD
-    <Button
-        android:id="@+id/buttonYCDangKi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="181dp"
-        android:text="Đăng ký tài khoản mới"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDangNhap"
-        tools:layout_editor_absoluteX="123dp"
-        tools:ignore="MissingConstraints" />
-=======
         <EditText
             android:id="@+id/editTextCMND"
             android:layout_width="281dp"
@@ -71,8 +56,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:ignore="MissingConstraints" />
->>>>>>> bca370a2461864186382a0d3d4f1b7dcc134d38e
+             />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -96,7 +80,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextCMND"
-            tools:ignore="MissingConstraints" />
+             />
 
         <Button
             android:id="@+id/buttonDangNhap"
@@ -116,7 +100,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-            tools:ignore="MissingConstraints" />
+           />
 
         <Button
             android:id="@+id/buttonYCDangKi"
@@ -134,7 +118,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonDangNhap"
-            tools:ignore="MissingConstraints" />
+            />
 
 
 
