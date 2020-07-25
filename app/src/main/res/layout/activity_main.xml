@@ -33,9 +33,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
-
-            />
+             />
 
         <EditText
             android:id="@+id/editTextCMND"
@@ -58,7 +56,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:ignore="MissingConstraints" />
+             />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -82,7 +80,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextCMND"
-            tools:ignore="MissingConstraints" />
+             />
 
         <Button
             android:id="@+id/buttonDangNhap"
@@ -102,7 +100,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-            tools:ignore="MissingConstraints" />
+           />
 
         <Button
             android:id="@+id/buttonYCDangKi"
@@ -122,7 +120,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonDangNhap"
-            tools:ignore="MissingConstraints" />
+            />
 
         <Button
             android:id="@+id/buttonChangePw"
