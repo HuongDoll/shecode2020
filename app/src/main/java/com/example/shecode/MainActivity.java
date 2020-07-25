@@ -14,23 +14,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
+
         setContentView(R.layout.dangki);
-=======
-        setContentView(R.layout.activity_main);
 
-        btn_dangky.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent sigUp = new Intent(MainActivity.this,SignUpActivity.class);
-                startActivity(sigUp);
-            }
-        });
-    }
+//        setContentView(R.layout.activity_main);
 
-    private void findID(){
-        btn_dangky = findViewById(R.id.buttonDangKi);
-        btn_dangnhap = findViewById(R.id.buttonDangNhap);
->>>>>>> aa1499323c4bb54a231f016ad0d7f3ea379949f2
+//        btn_dangky.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent sigUp = new Intent(MainActivity.this,SignUpActivity.class);
+//                startActivity(sigUp);
+//            }
+//        });
+//    }
+//
+//    private void findID(){
+//        btn_dangky = findViewById(R.id.buttonDangKi);
+//        btn_dangnhap = findViewById(R.id.buttonDangNhap);
+//
     }
 }
